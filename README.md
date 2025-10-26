@@ -33,7 +33,7 @@ It covers how to build secure and scalable backend services using authentication
 
 ```bash
 # Clone the repo
-git clone https://github.com/hamzehabuhijleh/ktor-server-fundamentals.git
+git clone git@github.com:Hamzeh03/ktor-server-fundamentals.git
 cd ktor-server-fundamentals
 
 # Build and run
