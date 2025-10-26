@@ -26,7 +26,6 @@ It covers how to build secure and scalable backend services using authentication
 - **Framework:** Ktor  
 - **Build Tool:** Gradle (Kotlin DSL)  
 - **Testing:** Postman & WebSocket workspace  
-- **Deployment Target:** AWS EC2 / Nginx  
 
 ---
 
