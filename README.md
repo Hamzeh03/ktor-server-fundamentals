@@ -1,39 +1,42 @@
-# ktor-project
+# 🧩 Ktor Server Fundamentals Project
 
-This project was created using the [Ktor Project Generator](https://start.ktor.io).
+This project demonstrates the core features of **Ktor**, a Kotlin-based asynchronous web framework.  
+It covers how to build secure and scalable backend services using authentication, plugins, and real-time communication.
 
-Here are some useful links to get you started:
+---
 
-- [Ktor Documentation](https://ktor.io/docs/home.html)
-- [Ktor GitHub page](https://github.com/ktorio/ktor)
-- The [Ktor Slack chat](https://app.slack.com/client/T09229ZC6/C0A974TJ9). You'll need to [request an invite](https://surveys.jetbrains.com/s3/kotlin-slack-sign-up) to join.
+## 🚀 Features Implemented
 
-## Features
+| Category | Description |
+|-----------|-------------|
+| **Static Content** | Served static files and resources using `staticResources` and `staticFiles`. |
+| **Authentication** | Implemented Basic, Bearer, Session, and JWT authentication flows. |
+| **Google OAuth** | Integrated Google Sign-In and generated JWT tokens for secure access. |
+| **Server-Sent Events (SSE)** | Streamed real-time events to clients using SSE. |
+| **WebSockets** | Created a multi-user chat system supporting broadcast and private messaging. |
+| **Rate Limiting** | Restricted API calls to control request frequency. |
+| **Custom Plugins** | Built a reusable plugin that adds custom headers to all responses. |
+| **Call Logging & Shutdown URL** | Configured request logging and graceful server shutdown. |
 
-Here's a list of features included in this project:
+---
 
-| Name                                       | Description                       |
-| --------------------------------------------|----------------------------------- |
-| [Routing](https://start.ktor.io/p/routing) | Provides a structured routing DSL |
+## 🧠 Tech Stack
 
-## Building & Running
+- **Language:** Kotlin  
+- **Framework:** Ktor  
+- **Build Tool:** Gradle (Kotlin DSL)  
+- **Testing:** Postman & WebSocket workspace  
+- **Deployment Target:** AWS EC2 / Nginx  
 
-To build or run the project, use one of the following tasks:
+---
 
-| Task                                    | Description                                                          |
-| -----------------------------------------|---------------------------------------------------------------------- |
-| `./gradlew test`                        | Run the tests                                                        |
-| `./gradlew build`                       | Build everything                                                     |
-| `./gradlew buildFatJar`                 | Build an executable JAR of the server with all dependencies included |
-| `./gradlew buildImage`                  | Build the docker image to use with the fat JAR                       |
-| `./gradlew publishImageToLocalRegistry` | Publish the docker image locally                                     |
-| `./gradlew run`                         | Run the server                                                       |
-| `./gradlew runDocker`                   | Run using the local docker image                                     |
+## ⚙️ How to Run
 
-If the server starts successfully, you'll see the following output:
+```bash
+# Clone the repo
+git clone https://github.com/hamzehabuhijleh/ktor-server-fundamentals.git
+cd ktor-server-fundamentals
 
-```
-2024-12-04 14:32:45.584 [main] INFO  Application - Application started in 0.303 seconds.
-2024-12-04 14:32:45.682 [main] INFO  Application - Responding at http://0.0.0.0:8080
-```
-
+# Build and run
+./gradlew build
+./gradlew run
